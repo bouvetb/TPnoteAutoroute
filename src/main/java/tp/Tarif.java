@@ -53,37 +53,7 @@ public class Tarif {
 		return result;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Tarif other = (Tarif) obj;
-		if (dateValidite == null) {
-			if (other.dateValidite != null)
-				return false;
-		} else if (!dateValidite.equals(other.dateValidite))
-			return false;
-		if (entree == null) {
-			if (other.entree != null)
-				return false;
-		} else if (!entree.equals(other.entree))
-			return false;
-		if (prix == null) {
-			if (other.prix != null)
-				return false;
-		} else if (!prix.equals(other.prix))
-			return false;
-		if (sortie == null) {
-			if (other.sortie != null)
-				return false;
-		} else if (!sortie.equals(other.sortie))
-			return false;
-		return true;
-	}
+
 
 	public void setDateValidite(LocalDateTime dateValidite) {
 		this.dateValidite = dateValidite;
